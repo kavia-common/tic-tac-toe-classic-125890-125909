@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Player turn indicator -->
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/x_turn"
+        android:textColor="@color/secondary"
+        android:textSize="20sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Player selection -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvChoosePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_player"
+            android:textColor="@color/secondary"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp" />
+
+        <RadioGroup
+            android:id="@+id/playerGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player_x"
+                android:textColor="@color/secondary"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player_o"
+                android:textColor="@color/secondary"
+                android:layout_marginStart="12dp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <!-- 3x3 Grid -->
+    <GridLayout
+        android:id="@+id/gridBoard"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds">
+
+        <Button
+            android:id="@+id/cell0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+        <Button
+            android:id="@+id/cell8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:textColor="@color/secondary"
+            android:background="@android:color/transparent" />
+
+    </GridLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

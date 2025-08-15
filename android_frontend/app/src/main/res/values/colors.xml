@@ -1,0 +1,6 @@
+<resources>
+    <color name="primary">#1976D2</color>
+    <color name="secondary">#424242</color>
+    <color name="accent">#FFC107</color>
+    <color name="background">#FFFFFF</color>
+</resources>
