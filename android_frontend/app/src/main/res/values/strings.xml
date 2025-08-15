@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- Status text -->
+    <string name="status_turn_default">Turn: -</string>
+    <string name="status_turn">Turn: %1$s</string>
+    <string name="status_win">%1$s wins!</string>
+    <string name="status_draw">Draw!</string>
+    <string name="status_content_desc">Current player turn or result</string>
+
+    <!-- Dialog for choosing symbol -->
+    <string name="choose_symbol_title">Choose your symbol</string>
+    <string name="choose_symbol_message">Who goes first?</string>
+    <string name="symbol_x">X</string>
+    <string name="symbol_o">O</string>
+
+    <!-- Buttons -->
+    <string name="restart_game">Restart Game</string>
+
+    <!-- Accessibility descriptions -->
+    <string name="cell_1_desc">Cell 1</string>
+    <string name="cell_2_desc">Cell 2</string>
+    <string name="cell_3_desc">Cell 3</string>
+    <string name="cell_4_desc">Cell 4</string>
+    <string name="cell_5_desc">Cell 5</string>
+    <string name="cell_6_desc">Cell 6</string>
+    <string name="cell_7_desc">Cell 7</string>
+    <string name="cell_8_desc">Cell 8</string>
+    <string name="cell_9_desc">Cell 9</string>
+</resources>
